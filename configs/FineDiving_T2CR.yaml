@@ -1,0 +1,38 @@
+# basic
+bs_train : 2
+bs_test : 1
+workers : 2
+max_epoch : 200
+
+# model
+pretrained_i3d_weight : './models/model_rgb.pth'
+
+# dataset
+data_root : '/data/xhb/FineDiving/opt/datasets/FINADiving_MTL_256s/FineDiving'
+label_path : 'Annotations/FineDiving/fine-grained_annotation_aqa.pkl'
+train_split : 'Annotations/FineDiving/train_split.pkl'
+test_split : 'Annotations/FineDiving/test_split.pkl'
+
+# optimizer
+optimizer: 'Adam'
+weight_decay : 0
+base_lr : 0.001
+lr_factor : 0.1
+
+# others
+dive_number_choosing : False
+usingDD: True
+seed : 0
+frame_length : 96
+voter_number : 10
+print_freq : 40
+fix_size : 5
+step_num : 3
+prob_tas_threshold : 0.25
+random_choosing : False
+action_number_choosing: True
+
+
+
+
+

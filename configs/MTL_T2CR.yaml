@@ -1,0 +1,37 @@
+# basic setting
+bs_train : 3
+bs_test : 1
+workers : 4
+step_per_update: 2
+max_epoch : 200
+val_epoch : 10
+val_start : 100
+
+# model setting
+pretrained_i3d_weight : './models/model_rgb.pth'
+RT_depth : 5
+score_range : 30
+voter_number : 3
+
+# dataset setting
+#data_root : '/data/xhb/MTL-AQA data/data/frames'
+data_root : '/data/xhb/CoRe/MTL-AQA/new'
+label_path : './Annotations/MTL-AQA/info/final_annotations_dict_with_dive_number.pkl'
+train_split : './Annotations/MTL-AQA/info/train_split_0.pkl'
+test_split : './Annotations/MTL-AQA/info/test_split_0.pkl'
+dive_number_choosing : False
+usingDD: True
+frame_length : 103
+seed : 0
+temporal_shift_min : -3
+temporal_shift_max : 3
+
+# optimizer setting
+optimizer: 'Adam'
+weight_decay : 0
+base_lr : 0.001
+lr_factor : 0.1
+
+# others
+print_freq : 40
+
