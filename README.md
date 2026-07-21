@@ -48,4 +48,16 @@ bash ./scripts/test.sh 0,1 MTL T²CR ./experiments/T2CR/MTL/T²CR/last.pth
 # last.pth is obtained by train.sh and saved at "experiments/T2CR/MTL/T²CR/"
 ```
 
-### More descriptions coming soon!
+## Citation
+If our project is helpful for your research, please consider citing:
+```
+@article{ke2024two,
+  title={Two-path target-aware contrastive regression for action quality assessment},
+  author={Ke, Xiao and Xu, Huangbiao and Lin, Xiaofeng and Guo, Wenzhong},
+  journal={Information Sciences},
+  volume={664},
+  pages={120347},
+  year={2024},
+  publisher={Elsevier}
+}
+```
